@@ -102,3 +102,17 @@
     max-width: 260px;
   }
 }
+
+/* popup-order start */
+.popup-order .popup__content {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+@media (max-width: 576px) {
+  .popup-order .popup__content {
+    padding-left: 30px;
+    padding-right: 20px;
+  }
+}
+/* popup-order end */

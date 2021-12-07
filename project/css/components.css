@@ -69,8 +69,8 @@
 }
 
 .phone__item:hover {
-  background: black;
-  color: white;
+  background: white;
+  color: rgba(7, 52, 82, 1);
 }
 
 .phone__item--accent:hover {
@@ -497,6 +497,65 @@
 }
 
 /*btn-close end*/
+
+/* cart-btn start */
+.cart-btn {
+  position: fixed;
+  bottom: 60px;
+  right: 60px;
+  background: #fff;
+  width: 100px;
+  height: 100px;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 -2px 20px rgba(0, 0, 0, 0.15);
+  z-index: 5;
+  transition: transform 0.2s, opacity 0.2s;
+  padding: 0;
+}
+
+.cart-btn:hover {
+  transform: scale(1.1);
+}
+
+.cart-btn:active {
+  opacity: 0.6;
+  transform: scale(1);
+}
+
+.cart-btn:hover .cart-btn__icon {
+  fill: #ff0026;
+}
+
+.cart-btn__counter {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(0px, -10px);
+  background: #ff0026;
+  min-width: 35px;
+  height: 35px;
+  padding: 5px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 900;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.05em;
+}
+
+.cart-btn__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  transition: fill 0.2s;
+}
 
 /*mobile-menu start*/
 
